@@ -1,2 +1,2 @@
-# awesome-ai-konsledge-base
+# awesome-ai-konwledge-base
 java+ai+python+Rag+prompt
