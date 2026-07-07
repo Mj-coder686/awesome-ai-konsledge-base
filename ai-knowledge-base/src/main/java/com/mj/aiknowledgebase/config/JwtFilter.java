@@ -1,6 +1,7 @@
 package com.mj.aiknowledgebase.config;
 
 import com.mj.aiknowledgebase.util.JwtUtil;
+import com.mj.aiknowledgebase.util.UserContext;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
@@ -17,7 +18,17 @@ public class JwtFilter extends OncePerRequestFilter {
     @Autowired
     private JwtUtil jwtUtil;
 
-    private static final String[] WHITE_LIST = {"user/register", "user/login"};
+    @Autowired
+    private UserContext userContext;
+
+    private static final String[] WHITE_LIST = {
+            "/user/register",
+            "/user/login",
+            "/doc.html",
+            "/webjars/",
+            "/v3/api-docs",
+            "/swagger-resources"
+    };
     @Override
     protected void doFilterInternal(HttpServletRequest request,
                                     HttpServletResponse response,
@@ -26,7 +37,7 @@ public class JwtFilter extends OncePerRequestFilter {
 
 //        白名单放行
         for (String whitePath : WHITE_LIST){
-            if(path.equals(whitePath)){
+            if(path.startsWith(whitePath)){
                 filterChain.doFilter(request, response);
                 return;
             }
@@ -47,6 +58,7 @@ public class JwtFilter extends OncePerRequestFilter {
 //            解析Token,取出userId
             Long userId = jwtUtil.getUserIdFromToken(token);
 //            存入 request 后续Controller通过request.getAttribute("userId")获取获取
+            UserContext.setUserId(userId);
             request.setAttribute("userId", userId);
             filterChain.doFilter(request, response);
         }catch (Exception e){

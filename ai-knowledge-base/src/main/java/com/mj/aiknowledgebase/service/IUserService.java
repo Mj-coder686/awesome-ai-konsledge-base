@@ -3,6 +3,8 @@ package com.mj.aiknowledgebase.service;
 import com.mj.aiknowledgebase.domain.po.User;
 import com.baomidou.mybatisplus.extension.service.IService;
 
+import java.util.Map;
+
 /**
  * <p>
  * 用户表 服务类
@@ -14,4 +16,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
 public interface IUserService extends IService<User> {
 
     User login(User user);
+
+    void register(Map<String, String> body);
 }

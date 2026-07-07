@@ -6,6 +6,8 @@ import com.mj.aiknowledgebase.service.IUserService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
+import java.util.Map;
+
 /**
  * <p>
  * 用户表 服务实现类
@@ -21,7 +23,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
     public User login(User user) {
         User one = lambdaQuery()
                 .eq(User::getUsername, user.getUsername())
-                .eq(User::getId, user.getId())
+                .eq(User::getPassword, user.getPassword())
                 .one();
 
         if (one == null){
@@ -32,5 +34,22 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
         }
         one.setPassword(null);
         return one;
+    }
+
+    @Override
+    public void register(Map<String, String> body) {
+        String username = body.get("username");
+        String password = body.get("password");
+
+        if (username == null || password == null){
+            throw new RuntimeException("用户名或密码不能为空");
+        }
+        User user = new User();
+        user.setUsername(username);
+        user.setPassword(password);
+        boolean save = save(user);
+        if (!save){
+            throw new RuntimeException("注册失败");
+        }
     }
 }

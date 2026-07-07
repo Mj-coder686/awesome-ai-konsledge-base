@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2123c486-4277-4ee7-abe6-f9322b5e093a" name="更改" comment="feat(csv): 添加CSV文件上传解析及动态建表功能&#10;&#10;- 新增CSV上传控制器，提供分析和上传接口&#10;- 实现CSV表头自动分析功能，检测数据类型和建议文件类型&#10;- 添加动态表创建机制，支持用户、电影、评分三种表结构&#10;- 集成数据库记录功能，跟踪CSV上传历史和状态&#10;- 添加CORS配置和多部分文件上传支持&#10;- 创建CSV解析工具类和上传记录实体&#10;- 配置应用数据库连接和Redis缓存参数&#10;- 添加项目模块配置和编译设置" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="main" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Recommendation-System" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Mj-coder686&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Mj-coder686/Recommendation-System.git",
+    "accountId": "5674dd14-cd83-4f9f-8235-7390517c059b"
+  }
+}]]></component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="customMavenHome" value="D:\java\Maven\Maven\apache-maven-3.9.11" />
+        <option name="localRepository" value="D:\java\Maven\Maven\apache-maven-3.9.11\maven.repos" />
+        <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
+        <option name="userSettingsFile" value="D:\java\Maven\Maven\apache-maven-3.9.11\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="3FFusHCaSLGHOs3Xy2Y9uFzc7V3" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/java/Projrct/als&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.23774.435" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="2123c486-4277-4ee7-abe6-f9322b5e093a" name="更改" comment="" />
+      <created>1781683343413</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1781683343413</updated>
+      <workItem from="1781683344642" duration="417000" />
+      <workItem from="1783148866433" duration="161000" />
+      <workItem from="1783152109935" duration="19000" />
+      <workItem from="1783247983152" duration="59000" />
+    </task>
+    <task id="LOCAL-00001" summary="feat(frontend): 初始化电影推荐系统前端项目&#10;&#10;- 创建 Vue 3 应用程序结构和基础配置&#10;- 集成 Element Plus UI 组件库并设置全局样式&#10;- 实现主布局组件包含侧边栏导航和头部区域&#10;- 开发数据导入功能支持 CSV 文件上传和解析&#10;- 构建仪表盘页面展示统计信息和上传记录&#10;- 实现推荐管理界面包含推荐计算和结果查询&#10;- 添加推荐结果可视化展示页面&#10;- 配置路由系统和 API 接口调用&#10;- 设置开发服务器代理和构建配置">
+      <option name="closed" value="true" />
+      <created>1781683683755</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1781683683756</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat(csv): 添加CSV文件上传解析及动态建表功能&#10;&#10;- 新增CSV上传控制器，提供分析和上传接口&#10;- 实现CSV表头自动分析功能，检测数据类型和建议文件类型&#10;- 添加动态表创建机制，支持用户、电影、评分三种表结构&#10;- 集成数据库记录功能，跟踪CSV上传历史和状态&#10;- 添加CORS配置和多部分文件上传支持&#10;- 创建CSV解析工具类和上传记录实体&#10;- 配置应用数据库连接和Redis缓存参数&#10;- 添加项目模块配置和编译设置">
+      <option name="closed" value="true" />
+      <created>1781683710077</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1781683710077</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat(frontend): 初始化电影推荐系统前端项目&#10;&#10;- 创建 Vue 3 应用程序结构和基础配置&#10;- 集成 Element Plus UI 组件库并设置全局样式&#10;- 实现主布局组件包含侧边栏导航和头部区域&#10;- 开发数据导入功能支持 CSV 文件上传和解析&#10;- 构建仪表盘页面展示统计信息和上传记录&#10;- 实现推荐管理界面包含推荐计算和结果查询&#10;- 添加推荐结果可视化展示页面&#10;- 配置路由系统和 API 接口调用&#10;- 设置开发服务器代理和构建配置" />
+    <MESSAGE value="feat(csv): 添加CSV文件上传解析及动态建表功能&#10;&#10;- 新增CSV上传控制器，提供分析和上传接口&#10;- 实现CSV表头自动分析功能，检测数据类型和建议文件类型&#10;- 添加动态表创建机制，支持用户、电影、评分三种表结构&#10;- 集成数据库记录功能，跟踪CSV上传历史和状态&#10;- 添加CORS配置和多部分文件上传支持&#10;- 创建CSV解析工具类和上传记录实体&#10;- 配置应用数据库连接和Redis缓存参数&#10;- 添加项目模块配置和编译设置" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(csv): 添加CSV文件上传解析及动态建表功能&#10;&#10;- 新增CSV上传控制器，提供分析和上传接口&#10;- 实现CSV表头自动分析功能，检测数据类型和建议文件类型&#10;- 添加动态表创建机制，支持用户、电影、评分三种表结构&#10;- 集成数据库记录功能，跟踪CSV上传历史和状态&#10;- 添加CORS配置和多部分文件上传支持&#10;- 创建CSV解析工具类和上传记录实体&#10;- 配置应用数据库连接和Redis缓存参数&#10;- 添加项目模块配置和编译设置" />
+  </component>
+</project>

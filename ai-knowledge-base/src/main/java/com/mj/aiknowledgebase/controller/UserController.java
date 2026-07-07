@@ -48,4 +48,12 @@ public class UserController {
         data.put("user", user1);
         return Result.success(data);
     }
+
+
+    @PostMapping("register")
+    public Result<?> register(@RequestBody Map<String, String> body) {
+        log.info("用户注册：{}", body);
+        userService.register(body);
+        return Result.success();
+    }
 }
